@@ -1,0 +1,19 @@
+/* Styling specific for views.
+*/
+
+.views-row{
+  border-top: 1px solid #bbb;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+}
+
+.views-row:first-child{
+  border-top: none;
+  margin-top: 0rem;
+  padding-top: 0rem;
+}
+
+.views-row:last-child{
+  margin-bottom: 0rem;
+}

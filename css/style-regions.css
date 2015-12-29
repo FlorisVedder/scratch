@@ -1,0 +1,104 @@
+/**
+  * Mobile first design > from 0px and up
+  *
+  * First set the values for small devices
+  * If necessary put the values for bigger devices in the appropriate @media query
+  *
+  *
+  */
+
+#header-info, #header-menu, #breadcrumb,
+#content, #sidebar-first, #sidebar-second, #footer{
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+#header , #main,
+#header a, #main a{
+  color: #333;
+}
+
+#header h1, #content h1,
+#header h2, #header h2 a{
+  color: #4D0005;
+}
+
+/* styling per region */
+#header{
+  background-image: url("../images/scratched.jpg");
+  background-position: top center;
+  background-size: cover;
+}
+
+#header-info,
+#header-menu{
+  padding-top: .8em;
+  padding-bottom: .5em;
+}
+
+#header,
+#header a{
+  text-decoration: none;
+}
+
+#header a:hover{
+  text-decoration: underline;
+}
+
+#main{
+  background-attachment: fixed;
+  background-image: url("../images/scratched-light2.jpg");
+  background-position: top center;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  border-top: 1px solid #777;
+}
+
+#content{
+  padding-top: .5rem;
+  padding-bottom: 2em;
+}
+
+#sidebar-first,
+#sidebar-second{
+  color: #444;
+  background-image: url("../images/scratched.jpg");
+  background-position: top center;
+  background-size: cover;
+  border-top: 1px solid #bbb;
+  padding-top: .8rem;
+  padding-bottom: 2em;
+}
+
+#footer {
+  background-color: #333;
+}
+
+/**
+  * Mobile first design 60em and up
+  *
+  * First set the values for small devices
+  * If necessary put the values for bigger devices in the appropriate @media query
+  *
+  */
+@media only screen
+and (min-width: 60em) {
+  /* values that are ment for multiple regions */
+  #header, #breadcrumb, #navigation,
+  #content, #sidebar-first, #sidebar-second {
+    /* horizontal padding for the regions is set for all containers
+    so they allign well vertical padding is set per container */
+
+  }
+
+  #sidebar-first,
+  #sidebar-second{
+    background-image: initial;
+    border-top: initial;
+  }
+
+  #main-menu,
+  #secondary-menu{
+    padding-top: .2em;
+  }
+}

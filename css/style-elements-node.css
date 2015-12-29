@@ -1,0 +1,47 @@
+/* Styling specific for nodes.
+If a styling is expected to be used in more places then only inside the node.
+Consider in that case to place it in style-region.css for styling it according a region.
+Or in style-elements-field when it is rather field than node specific.
+*/
+
+
+/* the author and date, when and by who the node is submitted */
+.submitted{
+  color: #999;
+  font-size: .8rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+/* In case there are multiple nodes rendered above each other
+ we want to give theme some margin between them.
+*/
+.node {
+  margin-bottom: 2rem;
+}
+.node:last-child {
+  margin-bottom: 0rem;
+}
+
+.node .content{
+  margin-bottom: 1rem;
+}
+.node .content:last-child{
+  margin-bottom: 0;
+}
+
+.node-readmore a{
+  display: inline-block;
+  background-image: url("../images/scratched.jpg");
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 5px 10px;
+  text-align: center;
+  width: auto;
+}
+
+.node-readmore a:hover {
+  color: #222;
+  border-right: 1px solid #777;
+  border-left: 1px solid #777;
+}

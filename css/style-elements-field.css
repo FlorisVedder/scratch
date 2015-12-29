@@ -1,0 +1,18 @@
+/* Styling specific for fields.
+*/
+
+.field{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/*if an element is somewhere a first child, we don't want that it's top margin
+affect the position or layout of its parent*/
+.field:first-child{
+  margin-top: 0;
+}
+/*if an element is somewhere a last child, we don't want that it's bottom margin
+affect the position or layout of its parent*/
+.field:last-child{
+  margin-bottom: 0;
+}

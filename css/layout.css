@@ -1,0 +1,81 @@
+/**
+  * Mobile first: From 0px and up
+  *
+  * First set the values for small devices
+  * If necessary put the values for bigger devices in the appropriate @media query
+  *
+  *
+  */
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+/*if an element is somewhere a first child, we don't want that it's top margin
+affect the position or layout of its parent*/
+*:first-child{
+  margin-top: 0;
+}
+/*if an element is somewhere a last child, we don't want that it's bottom margin
+affect the position or layout of its parent*/
+*:last-child{
+  margin-bottom: 0;
+}
+
+/**
+  * Mobile first: From 60em and up
+  *
+  * First set the values for small devices
+  * If necessary put the values for bigger devices in the appropriate @media query
+  *
+  */
+@media only screen
+and (min-width: 60em) {
+  #main{
+    position: relative;
+  }
+
+  #header-info,
+  #header-menu{
+    float: left;
+    width: 50%;
+  }
+
+  #main-menu{
+    float: right;
+    padding-right: .5em;
+    width: auto;
+  }
+  #secondary-menu{
+    float: right;
+    padding-right: .5em;
+    width: auto;
+  }
+
+  #content{
+    float: right;
+    margin-right: 25%;
+    width: 50%;
+  }
+  #sidebar-first{
+    float: left;
+    width: 25%;
+  }
+  /* The influence of the height of this absolute positioned sidebar
+  is handled by layout.js
+  */
+  #sidebar-second{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 25%;
+  }
+}

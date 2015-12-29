@@ -1,0 +1,23 @@
+name = Scratch
+description = a custom theme starter from scratch
+package = Core
+core = 7.x
+
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/style-regions.css
+stylesheets[all][] = css/style-elements-global.css
+stylesheets[all][] = css/style-elements-views.css
+stylesheets[all][] = css/style-elements-node.css
+stylesheets[all][] = css/style-elements-field.css
+
+scripts[] = scripts/main.js
+scripts[] = scripts/layout.js
+region[head] = Head
+region[sidebar_first] = First Sidebar
+region[sidebar_seconf] = Second Sidebar
+region[content] = Content
+region[footer] = Footer
+
+;files[] =
+;dependencies[] = 
