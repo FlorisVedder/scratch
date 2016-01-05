@@ -1,28 +1,27 @@
 (function ($) {
 
   $(document).ready(function() {
-
-    // give siblings of #main the same height
-    //sameSiblingHeights("#main");
+    // give #header-info and #header-menu inside the #header container the same height
     sameSiblingHeights("#header", "#header-info, #header-menu");
+    // give siblings of #main the same height
+    sameSiblingHeights("#main");
   });
 
 
   /**
-   * Function to measure siblings and give them the same height.
+   * Function to measure siblings on same position and give them the same height.
    *
    * @parentSelector selector for parent
    *  The dom element for wich the children en itself needs to have
    *  the same height. For example "#main"
    *
    * @childSelector optional selector for child.
-   *   If given the code will only applied on the give children
+   *   If given the code will only be applied on the give children
    */
-  function sameSiblingHeights(parentSelector, childSelector){
-    //var childSelector = '';
+  function sameSiblingHeights(parentSelector, childSelectors){
     var parent = $(parentSelector);
     var height = 0;
-    var children = parent.children(childSelector);
+    var children = parent.children(childSelectors);
     var mainChild = children.first();
 
     // determine if all the childs start on a same position
